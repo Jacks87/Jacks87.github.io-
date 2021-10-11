@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    box-sizing:border-box;
+}
+body {
+    background-image: url("https://media0.giphy.com/media/dxOuMI1VkSlxGhXk35/giphy.gif?cid=ecf05e473e2hm7t6ig5ww2uvo5vgpfbszuc8ncdteg92j04q&rid=giphy.gif&ct=s");
+    /*background-image allows you to add the url from any images or gifs*/
+    background-color:black;
+
+    background-repeat:no-repeat;
+    /* the no-repeat background tag helps you to avoid having the background image repeated*/
+    background-position:center;
+        /*to position your background image*/
+    background-size:1000px;
+        /* bacground-size cover option will adjust the background image to fit the webpage*/
+    background-origin:border-box;
+/*position is where you want to have the image background. Size its pretty much how big/small and origin how the border would look like*/
+}
+
+.glow {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #eba2c7, 0 0 40px #8e506f, 0 0 50px #b400e6, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4db2ff, 0 0 40px #4d5cff, 0 0 50px #4a80a2, 0 0 60px #4dbbff, 0 0 70px #1ddc9f, 0 0 80px #00ffd0;
+    }
+}
+
+nav{
+    width: 80%;
+    position:sticky;
+    margin: 20px auto;
+    z-indez: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::before{
+    content: '';
+    background:#00ffee;
+    width:0%;
+    height:2px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition:width 0.5s;
+}
+.nav-links li a:hover::before{
+    width:100;
+
+}
+
+.category-list{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.category{
+    width: 150px;
+    height: 150px;
+    background: rgba(128, 255, 0, 0.15);
+    margin:0 15px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 30;
+    width: 100%;
+    background: linear-gradient(rgba(255, 0, 0, 0.331),rgba(224, 192, 255, 0.523),rgba(255, 192, 203, 0.523));
+    color: rgb(0, 0, 0);
+    text-align: center;
+ }
+ .category img{
+     width:150px;
+ }

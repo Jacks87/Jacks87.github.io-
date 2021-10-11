@@ -1,0 +1,97 @@
+body {
+    background-image: url("https://media1.giphy.com/media/BHNfhgU63qrks/giphy.gif?cid=ecf05e471jq3c3xg8qq5ievd57rbqueh9ai698ljve8ys0am&rid=giphy.gif&ct=g");
+    /*background-image allows you to add the url from any images or gifs*/
+    background-color:black;
+    background-repeat:no-repeat;
+    /* the no-repeat background tag helps you to avoid having the background image repeated*/
+    background-position:top;
+        /*to position your background image*/
+    background-size:cover;
+        /* bacground-size cover option will adjust the background image to fit the webpage*/
+    background-origin:border-box;
+/*position is where you want to have the image background. Size its pretty much how big/small and origin how the border would look like*/
+}
+
+.funWithButtons {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 200px;
+    border-color: rebeccapurple;
+}
+.btn {
+    background: linear-gradient(to right bottom,#278ec6,#a7c5f9); /* some background color */
+    color: white; /* White text */
+    border-radius: 200px; /*to make it circular*/
+    font-size: 16px; /* Set a font size */
+    padding: 10px 25px;/*to determine the position of the button*/
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer; /* Mouse pointer on hover */
+    box-shadow: 0 8px 16px 0 rgba(255, 0, 212, 0.2), 0 6px 20px 0 rgb(255, 1, 56);/*to make the bottom of the bottom glow*/
+}
+
+.btn:hover { /*to make it change font and color when we hover over the button with our mouse*/
+    background-color:pink;
+    color:black;
+}
+.btn1 {
+    background: linear-gradient(to right bottom,#7d217d,#ff00e1); /* some background color */
+    color: white; /* White text */
+    border-radius: 200px; /*to make it circular*/
+    font-size: 16px; /* Set a font size */
+    padding: 10px 25px;/*to determine the position of the button*/
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer; /* Mouse pointer on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 255, 21, 0.2), 0 6px 20px 0 rgb(1, 255, 73);/*to make the bottom of the bottom glow*/
+}
+
+.btn1:hover { /*to make it change font and color when we hover over the button with our mouse*/
+    background-color:rgb(91, 145, 227);
+    color:black;
+}
+.btn2 {
+    background: linear-gradient(to right bottom,#fe9a04,#d6e815); /* some background color */
+    color: white; /* White text */
+    border-radius: 200px; /*to make it circular*/
+    font-size: 16px; /* Set a font size */
+    padding: 10px 25px;/*to determine the position of the button*/
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer; /* Mouse pointer on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 255, 229, 0.2), 0 6px 20px 0 rgb(1, 255, 73);/*to make the bottom of the bottom glow*/
+}
+
+.btn2:hover { /*to make it change font and color when we hover over the button with our mouse*/
+    background-color:rgb(26, 230, 199);
+    color:black;
+}
+
+.crapsWithButtons {
+    background-color: rgb(255, 255, 255); /* some background color */
+    color: rgb(0, 0, 0); /* White text */
+    border-radius: 200px; /*to make it circular*/
+    font-size: 15px; /* Set a font size */
+    font-family: cursive;
+    cursor: pointer; /* Mouse pointer on hover */
+
+}
+
+.crapsWithButtons:hover { /*to make it change font and color when we hover over the button with our mouse*/
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+.PlayWithButtons {
+    background-color: rgb(255, 0, 157); /* some background color */
+    color: rgb(255, 255, 255); /* White text */
+    border-radius: 200px; /*to make it circular*/
+    font-size: 15px; /* Set a font size */
+    font-family: cursive;
+    cursor: pointer; /* Mouse pointer on hover */
+    box-shadow: 0 8px 16px 0 rgba(236, 236, 236, 0.2), 0 6px 20px 0 rgb(255, 255, 255);
+}

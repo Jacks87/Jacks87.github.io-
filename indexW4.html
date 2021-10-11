@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--JACKELIN BRITTON
+
+
+<html>
+
+<head>
+    <!--links my javascript file to the html file-->
+    <script src="codeW4.js"></script>
+    <!--This links my css file to this html-->
+    <link href="styleTables.css" rel="stylesheet" type="text/css" />
+    <!--This is where my title for the webpage goes-->
+
+    <title>
+        UAT Space Page
+    </title>
+</head>
+
+<body>
+    <table class="tableTop">
+    <!--<table> tags allows you to add rows and cells-->
+        <tr>
+            <!--tr defines a row in a table-->
+            <td><img src="UATspaceLogo.jpg" /></td>
+        <!--the <td> tag is used to designate a cell (table data) within a table containing data.-->
+            <td>
+                <h1 style="color: rgb(213, 224, 64);">
+                    UAT Space Program
+                <!--<h1> tags is to add a header-->
+                </h1>
+                <h2 style="padding-left: 50px; font-size: 30px;">🚀</h2>
+                <p><font face="Arial" size="3" style="color: rgba(255, 255, 255, 0.988);" id="countdownTimer"> The countdown starts here...</font></p>
+                <!--id= is to identify an element. Gives atribute. We are linking the countdowntimer-->
+                <br>
+                <button button onclick="betterCountdown();" class="PlayWithButtons">Start</button>
+                <button onclick="whileCount();" class="PlayWithButtons">Start While</button>
+                <button> Boring</button>
+                <!--<button> to create a button-->
+                <!--onclick= it's a way to have user to interact with page-->
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table id="data" border="8" width="50%" bordercolor="#B5179E">
+    <!--id= means what data/info we are putting in, border is to determine how thick the border will be, 
+        width for how long (large)the table will be and bordercolor to add color to the border-->
+        <col style="width: 25%;"
+        <col style="width: 25%;" 
+    <!-- col is for columns, style=width is for how big or small those columns are going to be-->
+        <thead>
+            <tr style="font-family: monospace; font-size: 15px; background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)">
+                <th style="font-size: 25px;">Data type</th>
+            <!--th is for table header-->
+                <th style="font-size: 25px;" style="font-style: italic;">Reading</th>
+            </tr>
+        </thead>
+        <tbody style="font-family: monospace; font-size: 15px; background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)">
+        <!-- tbody tag is to determine how the info in the cells will look like by adding style -->
+            <tr id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+            <tr id="latitude"><td>Latitude:</td><td>0</td></tr>
+            <tr id="longitude"><td>Longitude:</td><td>0</td></tr>
+            <tr id="gps_altitude"><td>GPS Altitude:</td><td>0</td></tr>
+            <tr id="bmpSensor_altitude"><td>BMP Sensor Altitude:</td><td>30383.04</td></tr>
+            <tr id="bmpSensor_pressure"><td>BMP Sensor Pressure:</td><td>2.34</td></tr>
+            <tr id="bmpSensor_temp"><td>BMP Sensor Temp:</td><td>0</td></tr>
+            <tr id="bdigSensor_temp"><td>Digital Sensor Temp:</td><td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS Sensor Temp:</td><td>25</td></tr>
+            <tr id="cssSensor_eCO2"><td>CSS Sensor eCO2:</td><td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS Sensor TVOC:</td><td>0</td></tr>
+            <tr id="UV"><td>UV:</td><td>0</td></tr>
+            <tr id="accelX"><td>accelX:</td><td>-0.87</td></tr>
+            <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+            <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+            <tr id="gyroX"><td>gyroX:</td><td>0.13</td></tr>
+            <tr id="gyroY"><td>gyroY:</td><td>0.57</td></tr>
+            <tr id="gyroZ"><td>gyroY:</td><td>-0.24</td></tr>
+            <tr id="magneticX"><td>magneticX:</td><td>4.66</td></tr>
+            <tr id="magneticY"><td>magneticY:</td><td>0.01</td></tr>
+            <tr id="magneticZ"><td>magneticZ:</td><td>-0.4</td></tr>
+        </tbody>
+    </table>    
+    <!-- br is for line break (to separate lanes)-->
+    <br>
+    <br>
+
+    <button onclick="start(); playOver();" class="funWithButtons" id="startButton">✅</button>
+    <!-- button tags to add a button-->
+    <button class="funWithButtons" onclick="stop();" id="stopButton" disabled=true>❌</button>
+    <!--class = to perform a task. Definition and usage-->
+    <br>
+    <br>
+    <button class="btn" class="soundButton" onclick="playEltonJohn();"> Rocket Man ▶ </button>
+    <!--onclick = instructs the browser to run a script when the visitor clicks a button-->
+    <br>
+    <br>
+    <button class="btn1" class="soundButton" onclick="playAerosmith();"> I Don't Wanna Miss A Thing ▶ </button>
+    <!-- soundButton to add sound by linking a mp3 file-->
+    <br>
+    <br>
+    <button class="btn2" class="soundButton" onclick="playColdPlay();"> A Sky Full of Stars ▶ </button>
+    <br>
+    <br>
+    <button onclick="play()" class="crapsWithButtons" style="font-size: 30px;">🎲</button>
+    <br>
+<!--to add some color to the craps results by specifying with different .divs-->
+<style>
+
+    .div-1 {
+        font-family: monospace;
+        color: #eeff00;
+    }
+        
+    .div-2 {
+        font-family: monospace;
+        color: #eeff00;
+    }
+        
+    .div-3 {
+        font-family: monospace;
+        color: #eeff00;
+    }
+ 
+    .div-4 {
+        font-family: monospace;
+        color: #eeff00;
+    }
+</style>
+<!--.div-1 to .div-4 {} we can add font-family for font style and color-->
+
+    <h3 style="color: mintcream;">Craps results</h3>
+    <div class="div-1" id="die1Res">Die1 results here...</div>
+    <div class="div-2" id="die2Res">Die2 results here...</div>
+    <div class="div-3" id="sumRes">Sum results here...</div>
+    <div class="div-4" id="finalRes">Final results here...</div>
+
+</body>
+
+</html>
